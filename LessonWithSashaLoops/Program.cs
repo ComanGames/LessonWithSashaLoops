@@ -10,6 +10,27 @@ namespace LessonWithSashaLoops
     {
         static void Main(string[] args)
         {
+            int[] A = new[] {5, 10, 25,8};
+            int[] B = new int[3];
+            //{5,10,25}
+            Console.WriteLine("Array A");
+            Console.WriteLine($"A[0] ={A[0]}");
+            Console.WriteLine($"A[1] ={A[1]}");
+            Console.WriteLine($"A[2] ={A[2]}");
+            Console.WriteLine($"A[3] ={A[3]}");
+            Console.WriteLine("");
+            Console.WriteLine("Array B");
+            Console.WriteLine($"B[0] ={B[0]}");
+            Console.WriteLine($"B[1] ={B[1]}");
+            Console.WriteLine($"B[2] ={B[2]}");
+            Console.WriteLine("");
+            Console.WriteLine("Legth of Arrays");
+            Console.WriteLine($"A.Length ={A.Length}");
+            Console.WriteLine($"B.Length ={B.Length}");
+
+
+            Console.ReadKey();
+
         }
     }
 }
