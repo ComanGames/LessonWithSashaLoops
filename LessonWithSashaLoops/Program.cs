@@ -11,10 +11,80 @@ namespace LessonWithSashaLoops
     {
         static void Main(string[] args)
         {
-//            FirstPartOfLesson();
-//            SecondPartOfLesson();
+            //            FirstPartOfLesson();
+            //            SecondPartOfLesson();
+            //            ThirdPartOfLesson();
+//            WhileAndDoWhile();
+//            ForAndForeach();
+//For
+            int x=0;
+            for (int i = 0; i < 180; i++)
+            {
+                if (i%5 == 0)
+                {
+                    Console.WriteLine($"x={x} i={i}");
+                    x += i;
+                }
+            }
+            Console.WriteLine($"Your result is {x}");
 
-            //String to char array  
+            Console.ReadKey();
+        }
+
+        private static void ForAndForeach()
+        {
+            Console.WriteLine("First for");
+            for (int i = 0; i < 10; i++)
+            {
+                Console.WriteLine(i);
+            }
+            Console.WriteLine("Second fro");
+            for (int i = 10; i >= 0; i--)
+            {
+                Console.WriteLine(i);
+            }
+            Console.WriteLine("Third For");
+            int[] A = new[] {1, 3, 5, 7, 9, 11, 13, 15};
+            for (int i = 0; i < A.Length; i++)
+            {
+                A[i]++;
+                Console.WriteLine($"A[{i}] = {A[i]}");
+            }
+            Console.WriteLine("Reverse For");
+            for (int i = A.Length - 1; i >= 0; i--)
+            {
+                A[i]--;
+                Console.WriteLine($"A[{i}] = {A[i]}");
+            }
+            Console.WriteLine("foreach");
+            foreach (int number in A)
+                Console.WriteLine(number);
+        }
+
+        private static void WhileAndDoWhile()
+        {
+            string password = "yura";
+            while (true)
+            {
+                Console.WriteLine("Write your password");
+                string tempPassword = Console.ReadLine();
+                if (tempPassword == password)
+                    break;
+                else
+                    Console.Clear();
+            }
+            // do while
+            int x = 0;
+            do
+            {
+                Console.WriteLine(++x);
+            } while (x < 1);
+            Console.WriteLine("");
+            Console.WriteLine("for");
+        }
+
+        private static void ThirdPartOfLesson()
+        {
             string word = "Hello Sasha";
             char[] c = word.ToCharArray();
             for (int i = 0; i < c.Length; i++)
@@ -24,10 +94,6 @@ namespace LessonWithSashaLoops
             //Char array to string
             word = new string(c);
             Console.WriteLine(word);
-
-            Console.ReadKey();
-
-        
         }
 
         private static void SecondPartOfLesson()
